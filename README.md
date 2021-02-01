@@ -7,3 +7,6 @@ WatchdogCounter set to equal 75 seconds to allow time to "FTP" between "Watchdog
 
 FTP tested using "Filezilla."
 
+Default for watchdogCounter = 0; is commented out.  Normal use; this would be uncommented or "watchdogCounter = 0;"
+
+If watchdogCounter reaches 75 seconds; "Watchdog Event is Triggered."
