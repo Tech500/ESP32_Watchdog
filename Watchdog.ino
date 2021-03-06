@@ -95,10 +95,10 @@ void setup()
      Serial.println(WiFi.localIP());
      Serial.println("");
 
-     secondTick.attach(1, ISRwatchdog);
+     secondTick.attach(1, ISRwatchdog);  //Set time inveral; here time interval is set for 1 second.
 
      configTime(0, 0, udpAddress1, udpAddress2);
-     setenv("TZ", "EST+5EDT,M3.2.0/2,M11.1.0/2", 3);   // this sets TZ to Indianapolis, Indiana
+     setenv("TZ", "EST+5EDT,M3.2.0/2,M11.1.0/2", 3);   //Sets TZ to Indianapolis, Indiana
      tzset();
 
      while (time(nullptr) < 100000ul)
