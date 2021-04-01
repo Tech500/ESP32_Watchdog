@@ -52,7 +52,7 @@ void IRAM_ATTR ISRwatchdog()
      if (watchdogCounter == 75)  //Number of seconds until "Watchdog event" is triggered.
      {
 
-          watchDog = 1;  //Flag used to determine when logWatchdog function is called.
+          watchDog = 1;  //Flag used to determine if watchdog is triggered.
 
      }
 
